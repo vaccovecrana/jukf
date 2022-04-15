@@ -12,6 +12,6 @@ dependencies {
 }
 ```
 
-See test case for usage example. Render plot in [eCharts]().
+See test case for usage example. Render plot in [eCharts](https://echarts.apache.org/examples/en/editor.html?c=line-simple).
 
 ![example plot](example.png)
