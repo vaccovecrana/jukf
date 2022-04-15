@@ -4,6 +4,7 @@ import com.google.gson.GsonBuilder;
 import j8spec.junit.J8SpecRunner;
 import org.junit.runner.RunWith;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -54,6 +55,10 @@ public class UkFilterTest {
               )
           })
       );
+
+      for (double[] cvr : filter.getCovariance()) {
+        System.out.println(Arrays.toString(cvr));
+      }
 
       System.out.println(g.toJson(chart));
     });
