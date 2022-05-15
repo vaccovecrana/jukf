@@ -18,6 +18,31 @@ public class UkFilterParams {
     return fp;
   }
 
+  public UkFilterParams withAlpha(double alpha) {
+    this.alpha = alpha;
+    return this;
+  }
+
+  public UkFilterParams withKi(double ki) {
+    this.ki = ki;
+    return this;
+  }
+
+  public UkFilterParams withBeta(double beta) {
+    this.beta = beta;
+    return this;
+  }
+
+  public UkFilterParams withQ(double q) {
+    this.q = q;
+    return this;
+  }
+
+  public UkFilterParams withR(double r) {
+    this.r = r;
+    return this;
+  }
+
   public static UkFilterParams getDefault() {
     return from(1e-3f, 2, 0, 0.05, 0.3);
   }

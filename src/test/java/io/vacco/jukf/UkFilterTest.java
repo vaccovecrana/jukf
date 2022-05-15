@@ -61,6 +61,12 @@ public class UkFilterTest {
       }
 
       System.out.println(g.toJson(chart));
+
+      var p = new UkFilterParams()
+          .withAlpha(1).withBeta(1).withKi(1)
+          .withQ(1).withR(1);
+
+      System.out.println(g.toJson(p));
     });
   }
 }
